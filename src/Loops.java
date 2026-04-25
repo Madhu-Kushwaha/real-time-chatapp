@@ -52,7 +52,21 @@ public class Loops {
           i++;
       }
         //Ninth Loop
+//        int i=1;
+//      while(i<1){
+//          int j = 1;
+//
+//          while(j<=3){
+//              System.out.println("i" + i + " , j= " +j);
+//          }
+//          i++;
+//      }
 
+        //Tenth loop
+        do{
+            System.out.println(i);
+        i++;
+        } while(i<=10);
 
     }
 
