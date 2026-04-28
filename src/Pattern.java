@@ -66,18 +66,21 @@ public class Pattern {
 
        //pattern 6
 
-        int n = 4;
-
-        for(int row =1; row<=n ; row++){
-            //spaces
-            for(int col=1;col<=row-1; col++){
-                System.out.print(" ");
-            }
-            for(int col=1;col<=2*n-2*row+1; col++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+////        int n = 4;
+//
+//        for(int row =1; row<=n ; row++){
+//            //spaces
+//            if(row == 1){
+//                continue;
+//            }
+//            for(int col=1;col<=row-1; col++){
+//                System.out.print(" ");
+//            }
+//            for(int col=1;col<=2*n-2*row+1; col++){
+//                System.out.print("*");
+//            }
+//            System.out.println();
+//        }
 //pattern 9
 
 //        int  n=4;
@@ -97,8 +100,79 @@ public class Pattern {
 //           }
 //            System.out.println(" ");
 //        }
+        //pattern 10
+//        int  n=4;
+//        for(int row =1; row<=n ; row++){
+//            //spaces
+//          if(row==1 || row ==2 || row ==n){
+//              for(int col=1; col<=row; col++){
+//                  System.out.print("*");
+//              }
+//          }
+//          else {
+//              System.out.println("*");
+//              for(int col=1; col<=(row-2);col++){
+//                  System.out.print("");
+//              }
+//              System.out.print("* ");
+//          }
+//            System.out.println();
+//        }
 
-    }
+
+        //pattern 11
+        int n =4;
+
+   for( int row =1; row<=n; row++){
+
+            //spaces
+            for(int col=1; col<=n-row; col++){
+                System.out.print("  ");
+            }
+
+            //stars
+                if(row==1){
+                    for(int col=1;col<=2*row-1;col++) {
+                        System.out.print("* ");
+                    }
+               }
+                else {
+                    System.out.print("* ");
+                    for(int col=1; col<=2*row-3;col++){
+                        System.out.print("  ");
+                    }
+                    System.out.print("* ");
+                }
+            System.out.println();
+            }
+
+         //part 2
+
+        for(int row=1; row<=(n-1);row++) {
+
+            for (int col = 1; col <=row; col++) {
+                System.out.print("  ");
+            }
+
+            if(row==(n-1)){
+                System.out.print("* ");
+            }
+            else{
+                //1*
+                System.out.print("* ");
+                for(int col=1;col<=2*(n-row)-3;col++){
+                    System.out.print("  ");
+                }
+                System.out.print("* ");
+            }
+
+        }
+
+        }
+
+
+
+
 }
 
 
