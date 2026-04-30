@@ -193,21 +193,35 @@ public class Pattern {
 
 
 // pattern 13
-        int n = 5;
-        for(int row =1; row<=n ; row++){
-           for(int col=1; col<=row;col++){
-               int a = n-col;
-               int b = 'A';
-               int ans = a+b;
-               char finalAns = (char)ans;
-               System.out.print(finalAns + " ");
-           }
-            System.out.println();
-        }
+//        int n = 5;
+//        for(int row =1; row<=n ; row++){
+//           for(int col=1; col<=row;col++){
+//               int a = n-col;
+//               int b = 'A';
+//               int ans = a+b;
+//               char finalAns = (char)ans;
+//               System.out.print(finalAns + " ");
+//           }
+//            System.out.println();
+//        }
 
         //pattern14
+        int n = 4;
+        for (int row = 1; row <= n; row++) {
+            //part1
 
+            for (int col =1; col <= n-row; col++) {
+                System.out.print(" ");
+            }
 
+            //part 2
+
+            for (int col = 1; col <= 2*row - 1; col++) {
+                System.out.print(row+ " ");
+            }
+            System.out.println(" ");
+        }
+        //pattern 15
     }
 }
 
